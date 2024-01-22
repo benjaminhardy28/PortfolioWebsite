@@ -1,0 +1,18 @@
+
+
+.iconSpace  {
+    color: #001fe6;
+    margin-left: 20px;
+    transition: transform .5s;
+}
+
+.iconSpace:hover {
+    transform: scale(1.2);
+}
+
+.profileShadow {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
