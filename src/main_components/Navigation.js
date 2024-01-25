@@ -7,7 +7,7 @@ import { Link } from 'react-scroll';
 
 
 function Navigation( ) {
-  const title = useTypingEffect("cd Ben_Hardy_Portfolio/", 300)
+  const title = useTypingEffect("cd Ben_Hardy_Portfolio", 300)
 
 
   return (
@@ -55,7 +55,7 @@ function Navigation( ) {
             <Navbar 
             style={{backgroundColor:'90be6d'}}>
               <Container fluid>
-                <Navbar.Brand style={{ position:'relative'}}>
+                <Navbar.Brand style={{ position:'relative', fontSize: '4.3vw'}}>
                   <span style={{color:'green', fontWeight:'bold'} }>my@computer:~$</span>
                   <span style={{color:'black'}}>{title}</span>
                   </Navbar.Brand>

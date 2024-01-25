@@ -6,7 +6,7 @@ function InterestCard({ icon, title, subTitle, mainText, subTitle2, mainText2 })
 
     const cardTest = {
       width: '25em',
-      height: '16em',
+      height: '16.4em',
       borderRadius: '1.5em',
       boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
       border: 'none',

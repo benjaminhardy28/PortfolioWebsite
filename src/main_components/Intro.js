@@ -14,12 +14,16 @@ function Intro() {
         paddingTop: "2vh",
         paddingLeft: "2vw",
         fontFamily: "monospace",
-        height: window.innerHeight,
+        minHeight: window.innerHeight,
       };
+
+    const textContainer = {
+        height: window.innerHeight,
+    }
 
     return (
         <div style={intro}>
-            <Container >
+            <Container style={{textContainer}}>
                 <Row>
                     <Col>
                         <span style={{fontSize:'180%'}}>
