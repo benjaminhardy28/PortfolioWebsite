@@ -17,13 +17,10 @@ function Intro() {
         minHeight: window.innerHeight,
       };
 
-    const textContainer = {
-        height: window.innerHeight,
-    }
 
     return (
         <div style={intro}>
-            <Container style={{textContainer}}>
+            <Container>
                 <Row>
                     <Col>
                         <span style={{fontSize:'180%'}}>
