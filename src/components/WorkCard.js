@@ -17,7 +17,7 @@ function WorkCard({ title, subTitle, mainText }) {
     <>
       <Card style={cardTest}>
         <Card.Body>
-          <Card.Title>{title}</Card.Title>
+          <Card.Title style={{fontWeight: 'bold'}}>{title}</Card.Title>
           <Card.Subtitle  className="mb-2 text-muted">{subTitle}</Card.Subtitle>
           <Card.Text>
             {mainText}

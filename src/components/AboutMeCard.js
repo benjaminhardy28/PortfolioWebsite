@@ -17,13 +17,13 @@ const AboutMeCard = ({ open, onClose }) => {
     }
     const card = {
         width: '30em',
-
         borderRadius: '2em',
         boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
         border: 'none',
         zIndex: '-1',
         marginTop: '.5em',
         marginBottom: '.5em',
+        padding: '1.5rem',
         
       }
 
@@ -32,7 +32,7 @@ const AboutMeCard = ({ open, onClose }) => {
     <div style={overLay} >
         <Card style={card}>
             <Card.Body>
-            <Card.Title >More About Me <FontAwesomeIcon icon={faPeopleArrows} style={{fontSize:'120%'}} />
+            <Card.Title style={{fontSize:'150%', fontWeight: 'bold'}} >More About Me <FontAwesomeIcon icon={faPeopleArrows} style={{fontSize:'100%', fontWeight: 'bold'}} />
             <span style={{position:'absolute', right:'1em', top:'1em', display:'block'}}  onClick={onClose} >
                 <FontAwesomeIcon icon={faXmark} />
             </span> 

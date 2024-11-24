@@ -11,10 +11,12 @@ import { faTerminal } from "@fortawesome/free-solid-svg-icons";
 
 function Intro() {
     const intro = {
-        paddingTop: "2vh",
-        paddingLeft: "2vw",
         fontFamily: "monospace",
         minHeight: window.innerHeight,
+        padding: '8vw',
+        boxShadow: 'rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px',
+        
+
       };
 
 
@@ -22,18 +24,20 @@ function Intro() {
         <div style={intro}>
             <Container>
                 <Row>
-                    <Col>
-                        <span style={{fontSize:'180%'}}>
-                            <FontAwesomeIcon icon={faTerminal} style={{color: 'red'}}/>
+                    <Col style={{ boxShadow: '',}}>
+                        <span style={{fontSize: window.innerWidth > 1100 ? '2.3rem' : '3.5vh'}} className="titleH1">
+                            <FontAwesomeIcon icon={faTerminal} style={{color: '3B71CA', fontFamily: '"Roboto", sans-serif',}}/>
                             Hi I'm Ben! A CS student at Texas A&M.
                         </span>
-                        <span style={{ fontWeight: 'bold', fontSize:'150%'}}>
+                        <span style={{ fontWeight: 'bold', fontSize: window.innerWidth > 1100 ? '1.8rem' : '3vh'}}>
+                                <pre></pre>
                                 {' To put it simply, I love building and innovating things.'} 
                         </span>  
-                        <span style={{ fontSize:'150%'}}>
+                        <pre></pre>
+                        <span style={{ fontSize:'1.5rem', fontSize: window.innerWidth > 1100 ? '1.5rem' : '2.9vh'}}>
                          {"I'm motivated by the potential to use tech to improve people's quality of life."}
                         </span> <pre></pre>
-                        <span style={{fontSize: '170%',}}>{' Check out some of my Work!\n'}</span>
+                        <span style={{fontSize: '1.5rem', fontSize: window.innerWidth > 1100 ? '1.7rem' : '2.5vh'}}>{' Scroll down to see some of my work!\n'}</span>
                         <div style={{marginTop: '2em'}}>
                             <InfoButtons/>
                             <SocialCard/>
@@ -41,8 +45,8 @@ function Intro() {
                     </Col>
                     {window.innerWidth > 1100 ?
                     <Col>
-                    <div className="	.d-lg-none .d-xl-block">
-                        <Image style={{ height:'20em', width:'18em'}} src={headShot} className="profileShadow" roundedCircle/>
+                    <div className="	.d-lg-none .d-xl-block" style={{ display: 'flex', justifyContent: 'center'}}>
+                        <Image style={{ height:'32rem', width:'28rem'}} src={headShot} className="profileShadow" />
                     </div>
                 </Col>
                 :

@@ -4,32 +4,10 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-function ProjectCard({ title, techUsed, description, data }) {
-    // const mobileCardContainer = { 
-    //   minHeight: '400px',
-    //   borderRadius: '20px',
-    //   boxShadow: 'rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px',
-    //   border: 'none',
-    //   display: 'flex', 
-    //   zIndex: '-1',
-    //   padding: '20px',
-    //   marginTop: '20px',
-    // }
-    // const cardContainer = { 
-    //   width: '90vw',
-    //   height: '54vh',
-    //   borderRadius: '20px',
-    //   boxShadow: 'rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px',
-    //   border: 'none',
-    //   display: 'flex', 
-    //   zIndex: '-1',
-    //   minHeight: '320px'
-    // }
+function ProjectCard({ title, techUsed, description, data, largeHeight, smallHeight }) {
 
     const cardTest = {
-
       borderRadius: '1em',
-      minHeight: '25em',
       maxWidth: '80em',
       boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px',
       border: 'none',
@@ -41,12 +19,25 @@ function ProjectCard({ title, techUsed, description, data }) {
   return (
         <>
       <Card style={cardTest}>
-        <Card.Body >
+        <Card.Body
+        //  style={{
+        //   minHeight : window.innerWidth > 1100 ?  largeHeight : smallHeight
+        //   }}
+        >
           <Container >
             <Row>
               <Col>
-                <Card.Title >{title}</Card.Title>
-                <Card.Subtitle  className="mb-2 text-muted">{techUsed}</Card.Subtitle>
+                <Card.Title style={{fontSize:'150%', fontWeight: 'bold', }}>{title}</Card.Title>
+                <Card.Subtitle  className="mb-2 text-muted" style={{lineHeight: '1.3rem', fontSize:'.85rem', marginTop: '.9rem'}}>
+                  {techUsed.map( (skill) => (
+                    <>          
+                    <span style={{ display: 'inline-block', marginBottom: '1.2rem', marginRight: '.3rem' }}>
+                      <span style={{ backgroundColor: '#c7ceff', padding: '.4rem', borderRadius: '.7rem' }}>{skill}</span>
+                      <span> </span>
+                    </span>   
+                  </>
+                ))}
+                </Card.Subtitle>
                 <Card.Text >
                   <p>{description}</p>
                 </Card.Text>
