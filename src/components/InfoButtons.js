@@ -9,7 +9,7 @@ function InfoButtons() {
 
     return (
         <div>
-            <a href={resume} target="_blank" style={{color:'white'}}>
+            <a href={resume} target="_blank" rel="noreferrer" style={{color:'white'}}>
                 <Button variant="outline-primary" >Resume</Button>{' '}
             </a>
             {/* <Button onClick={()=> setOpenAboutMe(true)} variant="outline-primary">About Me</Button>{' '}
@@ -18,4 +18,4 @@ function InfoButtons() {
     );
 }
 
-export default Info
+export default InfoButtons;

@@ -292,4 +292,16 @@ function Projects() {
             via audio as well as text translation by taking pictures with the camera. I developed prototypes using reflection and magnification techniques but a final version was never completed with the glasses due to a lack of access to
             MicroLEDs, waveguides, and other advanced technology. I created a usable prototype that is handheld and has all of the functionality.
             " 
-          data = {ltPictures} largeHeight= '25em
+          data = {ltPictures} largeHeight= '25em' smallHeight= '43em'/>
+        </div>
+        <div id="Digital_Frame" style={projectContainer}>
+          <ProjectCard title="Digital Picture Frame" techUsed={digitalFrameTech}
+            description= {' This is a DIY digital picture frame I built when I was 17. The images shown on the display are synced to Google Drive. Inspired by https://www.youtube.com/watch?v=3GC2EOQbrQo&t=680s, I used CAD to adjust the frame and synced the Raspberry Pi with Google Drive. This project was a fun way to get into linux and cloud sharing. '}
+          data = {pfPictures} largeHeight= '32em' smallHeight= '40em'/>
+        </div> *
+      </div>
+
+    );
+  }
+  
+  export default Projects;

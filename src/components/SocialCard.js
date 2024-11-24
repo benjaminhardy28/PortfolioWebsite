@@ -12,10 +12,10 @@ function SocialCard({ title, subTitle, mainText,}) {
 
   return (
     <div style={{fontSize: '3em', marginTop: '.3em' }}>
-        <a href="https://github.com/benjaminhardy28/Portfolio" target="_blank" >
+        <a href="https://github.com/benjaminhardy28/Portfolio" target="_blank" rel="noreferrer">
             <FontAwesomeIcon className="iconSpace" style={{color:'black'}} icon={faSquareGithub}/>
         </a>
-        <a href="https://www.linkedin.com/in/ben-hardy-470620285/" target="_blank" >
+        <a href="https://www.linkedin.com/in/ben-hardy-470620285/" target="_blank"rel="noreferrer" >
             <FontAwesomeIcon className="iconSpace" style={{color:'#0A66C2'}}  icon={faLinkedin}/>
         </a>
         <a>
