@@ -15,8 +15,6 @@ function Intro() {
         minHeight: window.innerHeight,
         padding: '8vw',
         boxShadow: 'rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px',
-        
-
       };
 
 
@@ -34,10 +32,10 @@ function Intro() {
                                 {' To put it simply, I love building and innovating things.'} 
                         </span>  
                         <pre></pre>
-                        <span style={{ fontSize:'1.5rem', fontSize: window.innerWidth > 1100 ? '1.5rem' : '2.9vh'}}>
+                        <span style={{fontSize: window.innerWidth > 1100 ? '1.5rem' : '2.9vh'}}>
                          {"I'm motivated by the potential to use tech to improve people's quality of life."}
                         </span> <pre></pre>
-                        <span style={{fontSize: '1.5rem', fontSize: window.innerWidth > 1100 ? '1.7rem' : '2.5vh'}}>{' Scroll down to see some of my work!\n'}</span>
+                        <span style={{fontSize: window.innerWidth > 1100 ? '1.7rem' : '2.5vh'}}>{' Scroll down to see some of my work!\n'}</span>
                         <div style={{marginTop: '2em'}}>
                             <InfoButtons/>
                             <SocialCard/>

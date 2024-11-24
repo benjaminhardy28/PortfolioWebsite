@@ -4,7 +4,7 @@ import resume from '../assets/Benjamin-Hardy-Resume2025.pdf'
 import AboutMeCard from './AboutMeCard';
 
 function InfoButtons() {
-    const [openAboutMe, setOpenAboutMe] = useState(false);
+    // const [openAboutMe, setOpenAboutMe] = useState(false);
 
 
     return (
