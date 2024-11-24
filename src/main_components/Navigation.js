@@ -66,7 +66,7 @@ function Navigation( ) {
             style={{backgroundColor:'rgba(28, 25, 25, 1)'}}>
               <Container fluid>
                 <Navbar.Brand style={{ position:'relative', fontSize: '2vh'}}>
-                  <span style={{fontWeight:'bold', color:'#3B71CA'}}>my@computer:~$</span>
+                  <span style={{fontWeight:'bold', color:'#3B71CA',} }>my@computer:~$</span>
                   <span style={{color:'white'}}>{title}</span>
                   </Navbar.Brand>
                 <Navbar.Toggle/> 

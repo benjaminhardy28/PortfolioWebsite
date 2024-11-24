@@ -18,7 +18,7 @@ function SocialCard({ title, subTitle, mainText,}) {
         <a href="https://www.linkedin.com/in/ben-hardy-470620285/" target="_blank" rel="noreferrer" >
             <FontAwesomeIcon className="iconSpace" style={{color:'#0A66C2'}}  icon={faLinkedin}/>
         </a>
-        <a>
+        <a href={mailtoURL}>
             <FontAwesomeIcon onClick={directEmail} className="iconSpace" icon={faEnvelope}/>
         </a>
     </div>

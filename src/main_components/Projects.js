@@ -264,7 +264,6 @@ function Projects() {
         <div id="Goal_App" style={projectContainer}>
           <ProjectCard title="Goal Completetion Social Network App" techUsed={goalAppTech}
             description="This mobile app allows users to set and track their own goals and motivations while being able to share and compete with their friends. Users can create their own goals, request and follow their friends, view their friends goals, and there is more to come being developed. 
-          
             " 
           data = {gsPictures} largeHeight = '32em' smallHeight = '42em'/>
         </div>
@@ -276,22 +275,19 @@ function Projects() {
         </div>
         <div id="Java_Game" style={projectContainer}>
           <ProjectCard title="Java Platform Game From Scratch" techUsed={javaGameTech}
-            description="This was a team project I worked on during my senior year of high school to build a Java platformer game from scratch. We drew all animations, developed game states, detected collisions, and implemented gravity. The project makes use of complex OOP principles as well as multithreading and MVC design for dynamic and clean gameplay.         
-            " 
+            description="This was a team project I worked on during my senior year of high school to build a Java platformer game from scratch. We drew all animations, developed game states, detected collisions, and implemented gravity. The project makes use of complex OOP principles as well as multithreading and MVC design for dynamic and clean gameplay.         " 
           data = {pgPictures} largeHeight = '32em' smallHeight= '43em'/>
         </div>
         <div id="AeroAdvice" style={projectContainer}>
           <ProjectCard title="AeroAdvice" techUsed={aeroAdviceTech}
-            description="This was a hackathon project for TamuHack where I worked on a team to develop a platform to allow users to find trip locations based on their preferences of time, cuisine, activities, budgets, dates, and more. 
-            " 
+            description="This was a hackathon project for TamuHack where I worked on a team to develop a platform to allow users to find trip locations based on their preferences of time, cuisine, activities, budgets, dates, and more. " 
           data = {aaPictures} largeHeight= '25em' smallHeight= '31em' />
         </div>
         <div id="AR_Glasses" style={projectContainer}>
           <ProjectCard title="AR Translation Glasses" techUsed={ARTech}
             description="This was a project I began when I was 16 to develop a pair of Augmented Reality (AR) glasses to serve as a translation device between different languages. The device allows for language translation
             via audio as well as text translation by taking pictures with the camera. I developed prototypes using reflection and magnification techniques but a final version was never completed with the glasses due to a lack of access to
-            MicroLEDs, waveguides, and other advanced technology. I created a usable prototype that is handheld and has all of the functionality.
-            " 
+            MicroLEDs, waveguides, and other advanced technology. I created a usable prototype that is handheld and has all of the functionality." 
           data = {ltPictures} largeHeight= '25em' smallHeight= '43em'/>
         </div>
         <div id="Digital_Frame" style={projectContainer}>
