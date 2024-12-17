@@ -263,13 +263,13 @@ function Projects() {
         </div>
         <div id="Goal_App" style={projectContainer}>
           <ProjectCard title="Goal Completetion Social Network App" techUsed={goalAppTech}
-            description="This mobile app allows users to set and track their own goals and motivations while being able to share and compete with their friends. Users can create their own goals, request and follow their friends, view their friends goals, and there is more to come being developed. 
+            description="This mobile app allows users to set and track their own goals and motivations while being able to share and compete with their friends. Users can create their own goals, request and follow their friends, and view their friends goals. The Backend is hosted on AWS EC2 utilizing Express.Js and PostgresQL ran using Docker Compose.
             " 
           data = {gsPictures} largeHeight = '32em' smallHeight = '42em'/>
         </div>
         <div id="Load_Balancer" style={projectContainer}>
           <ProjectCard title="Custom Load Balancer" techUsed={loadBalancerTech}
-            description="I'm currently working on this project as a way to expand my knowlege and skills into system design, cloud, and backend development. I am working on the load balancer written in GoLang and using AWS for hosting and docker for containerization. The API and database was developed using Express.js and PostgreSQL.         
+            description="Through this project I have been able to learn more about system design, microservices, and developing scalable applications. I used Go to develop the load balancer which redirects requests to several EC2 instances using a round robin technique. These EC2 instances are part of an Auto Scaling Group and the load balancer uses AWS SDK to periodically fecth the IP addresses of the instances in the ASG.     
             " 
           data = {lbDesign} largeHeight = '27em' smallHeight = '50em'/>
         </div>
