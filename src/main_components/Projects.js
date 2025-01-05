@@ -179,14 +179,14 @@ const customNotifTech = [
   'Python Requests', 
   'Multithreading',
 ]
-const goalAppTech = [
-  'React Native', 
-  'Node.Js', 
-  'Express.Js', 
-  'PostgresQL', 
-  'RESTful API', 
-  'Jwts',
-]
+// const goalAppTech = [
+//   'React Native', 
+//   'Node.Js', 
+//   'Express.Js', 
+//   'PostgresQL', 
+//   'RESTful API', 
+//   'Jwts',
+// ]
 const aeroAdviceTech = [
   'React Js',
   'React Boostrap',
