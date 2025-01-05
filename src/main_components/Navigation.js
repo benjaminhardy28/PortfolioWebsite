@@ -32,18 +32,18 @@ function Navigation( ) {
                       <Link to="Documentation_Builder"  style={{display:'block'}}  spy={true} smooth={true} offset={-100} duration={300}>Documentation Builder</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Item >
-                      <Link to="Foot_Keyboard" style={{display:'block'}}  spy={true} smooth={true} offset={-100} duration={300}>
-                        Foot Controlled Computer Keyboard</Link>
-                      </NavDropdown.Item>
-                    <NavDropdown.Item >
                       <Link to="Custom_Notif" style={{display:'block'}} spy={true} smooth={true} offset={-100} duration={300}>Custom Notification Website</Link>
                     </NavDropdown.Item>
-                    <NavDropdown.Item >
+                    {/*<NavDropdown.Item >
                       <Link to="Goal_App"  style={{display:'block'}}  spy={true} smooth={true} offset={-100} duration={300}>Goal Setting App</Link>
-                    </NavDropdown.Item>
+                    </NavDropdown.Item> */}
                     <NavDropdown.Item >
                       <Link to="Load_Balancer"  style={{display:'block'}}  spy={true} smooth={true} offset={-100} duration={300}>Custom Load Balancer</Link>
                     </NavDropdown.Item>
+                    <NavDropdown.Item >
+                      <Link to="Foot_Keyboard" style={{display:'block'}}  spy={true} smooth={true} offset={-100} duration={300}>
+                        Foot Controlled Computer Keyboard</Link>
+                      </NavDropdown.Item>
                     <NavDropdown.Item >
                       <Link to="Java_Game"  style={{display:'block'}}  spy={true} smooth={true} offset={-100} duration={300}>Java Platform Game From Scratch</Link>
                     </NavDropdown.Item>

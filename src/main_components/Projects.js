@@ -32,10 +32,6 @@ var fcPictures = [
     id : 6,
     image: require('../assets/configPic.jpg'),
   },
-  {
-    id: 7,
-    image: require('../assets/prototypePic.jpg')
-  }
 ]
 var cnPictures = [
   {
@@ -48,28 +44,28 @@ var cnPictures = [
   },
   {
     id: 3,
-    image: require('../assets/login.jpg'),
+    image: require('../assets/SignUpPic.jpg'),
   },
   {
     id: 4,
-    image: require('../assets/SignUpPic.jpg'),
-  },
+    image: require('../assets/notif_schematic.png')
+  }
 ]
 
-var gsPictures = [
-  {
-    id: 1,
-    image: require('../assets/GsSnUp.png')
-  },
-  {
-    id: 2,
-    image: require('../assets/GsSgnIn.jpg')
-  },
-  {
-    id: 3,
-    image: require('../assets/GsMain.jpg')
-  },
-]
+// var gsPictures = [
+//   {
+//     id: 1,
+//     image: require('../assets/GsSnUp.png')
+//   },
+//   {
+//     id: 2,
+//     image: require('../assets/GsSgnIn.jpg')
+//   },
+//   {
+//     id: 3,
+//     image: require('../assets/GsMain.jpg')
+//   },
+// ]
 
 var pgPictures = [
   {
@@ -136,14 +132,10 @@ var aaPictures = [
   },
   {
     id: 2,
-    image: require('../assets/AAresults.png')
-  },
-  {
-    id: 3,
     image: require('../assets/AAfind.png')
   },
   {
-    id: 4,
+    id: 3,
     image: require('../assets/AAtickets.png')
   }
 ]
@@ -247,13 +239,6 @@ function Projects() {
             " 
           data = {ncrPictures} largeHeight = '27em' smallHeight = '50em'/>
         </div>
-        <div id="Foot_Keyboard" style={projectContainer}>
-          <ProjectCard title="Foot Controlled Computer Keyboard" techUsed={footKeyboardTech}
-            description="This was a year-long project in my Senior year of high school where I led a team to develop a foot-controlled keyboard designed to help individuals lacking upper body extremities. Every 9 weeks we presented to a panel of engineers to evaluate our project. I was responsible for all software and electronic circuitry involved in this project. It was an amazing experience as we were able to develop the project from a problem, a solution, a design, and finally a product. This project taught me a lot about why I have such a passion for technology and building things to help people. Check out us using it to play Minecraft on my Github!
-          
-            " 
-          data = {fcPictures} largeHeight = '27em' smallHeight = '50em'/>
-        </div>
          <div id="Custom_Notif" style={projectContainer}>
           <ProjectCard title="Custom Notification Website" techUsed={customNotifTech}
             description="This platform allows users to be notified of anything they specify on the internet. Notifications are generated and given to users based on the website they enter and the contents they want to be updated about. I have a demo video on my GitHub displaying the real-time notifications based on text changes.
@@ -261,17 +246,24 @@ function Projects() {
             " 
           data = {cnPictures} largeHeight = '25em' smallHeight = '39em'/>
         </div>
-        <div id="Goal_App" style={projectContainer}>
+        {/* <div id="Goal_App" style={projectContainer}>
           <ProjectCard title="Goal Completetion Social Network App" techUsed={goalAppTech}
             description="This mobile app allows users to set and track their own goals and motivations while being able to share and compete with their friends. Users can create their own goals, request and follow their friends, and view their friends goals. The Backend is hosted on AWS EC2 utilizing Express.Js and PostgresQL ran using Docker Compose.
             " 
           data = {gsPictures} largeHeight = '32em' smallHeight = '42em'/>
-        </div>
+        </div> */}
         <div id="Load_Balancer" style={projectContainer}>
           <ProjectCard title="Custom Load Balancer" techUsed={loadBalancerTech}
             description="Through this project I have been able to learn more about system design, microservices, and developing scalable applications. I used Go to develop the load balancer which redirects requests to several EC2 instances using a round robin technique. These EC2 instances are part of an Auto Scaling Group and the load balancer uses AWS SDK to periodically fecth the IP addresses of the instances in the ASG.     
             " 
           data = {lbDesign} largeHeight = '27em' smallHeight = '50em'/>
+        </div>
+        <div id="Foot_Keyboard" style={projectContainer}>
+          <ProjectCard title="Foot Controlled Computer Keyboard" techUsed={footKeyboardTech}
+            description="This was a year-long project in my Senior year of high school where I led a team to develop a foot-controlled keyboard designed to help individuals lacking upper body extremities. Every 9 weeks we presented to a panel of engineers to evaluate our project. I was responsible for all software and electronic circuitry involved in this project. It was an amazing experience as we were able to develop the project from a problem, a solution, a design, and finally a product. This project taught me a lot about why I have such a passion for technology and building things to help people. Check out us using it to play Minecraft on my Github!
+          
+            " 
+          data = {fcPictures} largeHeight = '27em' smallHeight = '50em'/>
         </div>
         <div id="Java_Game" style={projectContainer}>
           <ProjectCard title="Java Platform Game From Scratch" techUsed={javaGameTech}
