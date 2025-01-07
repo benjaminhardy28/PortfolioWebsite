@@ -5,7 +5,6 @@ import Image from 'react-bootstrap/Image';
 import headShot  from '../assets/headshot.jpg';
 import '../extraAffects.css'
 import SocialCard from "../components/SocialCard";
-import InfoButtons from "../components/InfoButtons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTerminal } from "@fortawesome/free-solid-svg-icons";
 
