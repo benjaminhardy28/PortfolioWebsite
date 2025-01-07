@@ -234,14 +234,14 @@ function Projects() {
         </h1>
         <div id="Documentation_Builder" style={projectContainer}>
           <ProjectCard title="Documentation Builder - NCR Atleos" techUsed={documentationBuilderTech}
-            description="This tool serves as a way to build, manage, and view documentation for NCR Atleo's API's. The website acts as a document editor similar to Microsoft Word but is tailored to API Documentation. The tool allows the user to create sections, sub-sections, code segments, tables, and more. The document can be built through the internal portal which then automatically generates a web page displaying the API information for the customer. The website encompasses automatic document saving, image insertions, and document history tracking.
+            description="My internship project was to build this full-stack web platform to allow NCR employees to create, manage, and serve the company's API documentation through the web. The website has automatic saving and document history tracking, as well as custom image uploading and insertions. The documentation builder allows users to easily build structured API documentation that is easy to follow and understand for clients.
           
             " 
           data = {ncrPictures} largeHeight = '27em' smallHeight = '50em'/>
         </div>
          <div id="Custom_Notif" style={projectContainer}>
           <ProjectCard title="Custom Notification Website" techUsed={customNotifTech}
-            description="This platform allows users to be notified of anything they specify on the internet. Notifications are generated and given to users based on the website they enter and the contents they want to be updated about. I have a demo video on my GitHub displaying the real-time notifications based on text changes.
+            description="This platform lets users get notified of anything they specify on the internet. Notifications are generated and given to users based on the website they enter and the contents they want to be updated about. I have a demo video on my GitHub that displays real-time notifications based on text changes. The website is securely built using JWTs and Oauth2 PKCE flow.
           
             " 
           data = {cnPictures} largeHeight = '25em' smallHeight = '39em'/>
@@ -260,7 +260,7 @@ function Projects() {
         </div>
         <div id="Foot_Keyboard" style={projectContainer}>
           <ProjectCard title="Foot Controlled Computer Keyboard" techUsed={footKeyboardTech}
-            description="This was a year-long project in my Senior year of high school where I led a team to develop a foot-controlled keyboard designed to help individuals lacking upper body extremities. Every 9 weeks we presented to a panel of engineers to evaluate our project. I was responsible for all software and electronic circuitry involved in this project. It was an amazing experience as we were able to develop the project from a problem, a solution, a design, and finally a product. This project taught me a lot about why I have such a passion for technology and building things to help people. Check out us using it to play Minecraft on my Github!
+            description="This was a year-long project in my Senior year of high school where I led a team to develop a foot-controlled keyboard designed to help individuals lacking upper body extremities. I was responsible for all software and electronic circuitry involved in this project. This project taught me a lot about why I have such a passion for technology and building things to help people. Check out us using it to play Minecraft on my Github!
           
             " 
           data = {fcPictures} largeHeight = '27em' smallHeight = '50em'/>
@@ -277,9 +277,9 @@ function Projects() {
         </div>
         <div id="AR_Glasses" style={projectContainer}>
           <ProjectCard title="AR Translation Glasses" techUsed={ARTech}
-            description="This was a project I began when I was 16 to develop a pair of Augmented Reality (AR) glasses to serve as a translation device between different languages. The device allows for language translation
+            description="This was a project I began when I was 16 to develop a pair of Augmented Reality (AR) glasses. The device allows for language translation
             via audio as well as text translation by taking pictures with the camera. I developed prototypes using reflection and magnification techniques but a final version was never completed with the glasses due to a lack of access to
-            MicroLEDs, waveguides, and other advanced technology. I created a usable prototype that is handheld and has all of the functionality." 
+            MicroLEDs, waveguides, and other advanced technology." 
           data = {ltPictures} largeHeight= '25em' smallHeight= '43em'/>
         </div>
         <div id="Digital_Frame" style={projectContainer}>

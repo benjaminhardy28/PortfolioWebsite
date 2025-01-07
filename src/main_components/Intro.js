@@ -37,7 +37,7 @@ function Intro() {
                         </span> <pre></pre>
                         <span style={{fontSize: window.innerWidth > 1100 ? '1.7rem' : '2.5vh'}}>{' Scroll down to see some of my work!\n'}</span>
                         <div style={{marginTop: '2em'}}>
-                            <InfoButtons/>
+                            {/* <InfoButtons/> */}
                             <SocialCard/>
                         </div>
                     </Col>
