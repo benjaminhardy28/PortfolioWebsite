@@ -7,6 +7,7 @@ import '../extraAffects.css'
 import SocialCard from "../components/SocialCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTerminal } from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'react-scroll';
 
 function Intro() {
     const intro = {
@@ -34,7 +35,43 @@ function Intro() {
                         <span style={{fontSize: window.innerWidth > 1100 ? '1.5rem' : '2.9vh'}}>
                          {"I'm motivated by the potential to use tech to improve people's quality of life."}
                         </span> <pre></pre>
-                        <span style={{fontSize: window.innerWidth > 1100 ? '1.7rem' : '2.5vh'}}>{' Scroll down to see some of my work!\n'}</span>
+                        {/* <span style={{fontSize: window.innerWidth > 1100 ? '1.7rem' : '2.5vh'}}>{'I love building with both hardware and software!\n'}</span> */}
+                        <span style={{ fontSize: window.innerWidth > 1100 ? '1.7rem' : '2.5vh' }}>
+                            I have diverse {' '}
+                            <Link
+                                to="Skills"
+                                spy={true}
+                                smooth={true}
+                                offset={-30}
+                                duration={300}
+                                style={{ textDecoration: 'underline', color: '#007bff', cursor: 'pointer' }}
+                            >
+                                experience
+                            </Link>{', and '}
+                            </span>
+                        <span style={{ fontSize: window.innerWidth > 1100 ? '1.7rem' : '2.5vh' }}>
+                            I love building projects in both {' '}
+                            <Link
+                                to="Software_Projects"
+                                spy={true}
+                                smooth={true}
+                                offset={-30}
+                                duration={300}
+                                style={{ textDecoration: 'underline', color: '#007bff', cursor: 'pointer' }}
+                            >
+                                Software
+                            </Link>{' and '}
+                            <Link
+                                to="Embedded_Projects"
+                                spy={true}
+                                smooth={true}
+                                offset={-30}
+                                duration={300}
+                                style={{ textDecoration: 'underline', color: '#007bff', cursor: 'pointer' }}
+                            >
+                                Embedded Systems
+                            </Link>{'!'}
+                            </span>
                         <div style={{marginTop: '2em'}}>
                             {/* <InfoButtons/> */}
                             <SocialCard/>

@@ -5,7 +5,7 @@ function WorkCard({ title, subTitle, mainText }) {
 
   const cardTest = {
     width: '30em',
-    height: '16em',
+    height: '13em',
     borderRadius: '1em',
     boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px',
     border: 'none',

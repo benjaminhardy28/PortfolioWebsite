@@ -155,6 +155,17 @@ var ncrPictures = [
   }
 ]
 
+var ccPictures = [
+  {
+    id: 1,
+    image: require('../assets/cc_image1.png')
+  },
+  {
+    id: 2,
+    image: require('../assets/cc_image2.png')
+  }
+]
+
 
 const footKeyboardTech = [
   'Arduino',
@@ -207,6 +218,7 @@ const ARTech = [
 const digitalFrameTech =['Raspberry Pi', 'CAD', '3D-printing', 'Rclone']
 const documentationBuilderTech = ['.NET', 'Blazor', 'Restful Web API', 'SQL Server', 'Telerik']
 const loadBalancerTech = ['GoLang', 'Docker', 'AWS', 'Express.js', 'PostgreSQL']
+const ccTech = ['AWS EC2', 'Express.js', 'Docker', 'PostgreSQL', 'AWS SES', 'Next.js', 'JWT']
 
 
 
@@ -215,7 +227,7 @@ function Projects() {
         display: 'flex',  
         justifyContent:'center', 
         alignItems:'center', 
-        marginBottom: '50px',
+        marginBottom: '0px',
     }
     const titleText = {
       display:'flex', 
@@ -230,8 +242,17 @@ function Projects() {
     return (
       <div>
         <h1 style={titleText}>
-          My Work
+          My Projects
         </h1>
+                <h2 style={titleText} id="Software_Projects">
+          Software
+        </h2>
+        <div id="Connect_Campus_LLC" style={projectContainer}>
+          <ProjectCard title="Connect Campus LLC" techUsed={ccTech}
+            description="I co-founded this LLC to create a college-exclusive web platform for student housing subleasing, scaling to 100+ active users. This website is allows college students to securely create an account and view subleasing opportunities specific to their university, allowing for a personalized and safe housing search experience.
+            " 
+          data = {ccPictures} largeHeight = '27em' smallHeight = '50em'/>
+        </div>
         <div id="Documentation_Builder" style={projectContainer}>
           <ProjectCard title="Documentation Builder - NCR Atleos" techUsed={documentationBuilderTech}
             description="My internship project was to build this full-stack web platform to allow NCR employees to create, manage, and serve the company's API documentation through the web. The website has automatic saving and document history tracking, as well as custom image uploading and insertions. The documentation builder allows users to easily build structured API documentation that is easy to follow and understand for clients.
@@ -258,13 +279,6 @@ function Projects() {
             " 
           data = {lbDesign} largeHeight = '27em' smallHeight = '50em'/>
         </div>
-        <div id="Foot_Keyboard" style={projectContainer}>
-          <ProjectCard title="Foot Controlled Computer Keyboard" techUsed={footKeyboardTech}
-            description="This was a year-long project in my Senior year of high school where I led a team to develop a foot-controlled keyboard designed to help individuals lacking upper body extremities. I was responsible for all software and electronic circuitry involved in this project. This project taught me a lot about why I have such a passion for technology and building things to help people. Check out us using it to play Minecraft on my Github!
-          
-            " 
-          data = {fcPictures} largeHeight = '27em' smallHeight = '50em'/>
-        </div>
         <div id="Java_Game" style={projectContainer}>
           <ProjectCard title="Java Platform Game From Scratch" techUsed={javaGameTech}
             description="This was a team project I worked on during my senior year of high school to build a Java platformer game from scratch. We drew all animations, developed game states, detected collisions, and implemented gravity. The project makes use of complex OOP principles as well as multithreading and MVC design for dynamic and clean gameplay.         " 
@@ -274,6 +288,16 @@ function Projects() {
           <ProjectCard title="AeroAdvice" techUsed={aeroAdviceTech}
             description="This was a hackathon project for TamuHack where I worked on a team to develop a platform to allow users to find trip locations based on their preferences of time, cuisine, activities, budgets, dates, and more. " 
           data = {aaPictures} largeHeight= '25em' smallHeight= '31em' />
+        </div>
+        <h2 style={titleText} id="Embedded_Projects">
+          Embedded
+        </h2>
+        <div id="Foot_Keyboard" style={projectContainer}>
+          <ProjectCard title="Foot Controlled Computer Keyboard" techUsed={footKeyboardTech}
+            description="This was a year-long project in my Senior year of high school where I led a team to develop a foot-controlled keyboard designed to help individuals lacking upper body extremities. I was responsible for all software and electronic circuitry involved in this project. This project taught me a lot about why I have such a passion for technology and building things to help people. Check out us using it to play Minecraft on my Github!
+          
+            " 
+          data = {fcPictures} largeHeight = '27em' smallHeight = '50em'/>
         </div>
         <div id="AR_Glasses" style={projectContainer}>
           <ProjectCard title="AR Translation Glasses" techUsed={ARTech}

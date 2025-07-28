@@ -24,7 +24,7 @@ function Navigation( ) {
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="justify-content-end flex-grow-1 pe-3" >
                   <Nav.Link >
-                    <Link to="Skills" spy={true} smooth={true} offset={-30} duration={300} style={{marginRight: '3vw', color:'white'}}>Skills</Link>
+                    <Link to="Skills" spy={true} smooth={true} offset={-30} duration={300} style={{marginRight: '3vw', color:'white'}}>Skills and Experience</Link>
                   </Nav.Link>
                   <NavDropdown id="basic-nav-dropdown" style={{ marginRight: '15vw'}}
                         title={ <span style={{color: 'white'}}>Projects</span>} >

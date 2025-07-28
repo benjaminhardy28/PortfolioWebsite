@@ -33,7 +33,7 @@ function TechnoCards() {
         "Java Spring Boot",
         "Express/Node Js",
         "Python Flask",
-        ".NET Web API"
+        ".NET Web API",
       ],
       "section2": [
         "PostgresQL",
@@ -45,6 +45,7 @@ function TechnoCards() {
 
     const otherSkills = {
       "section1": [
+        "Docker",
         "Web Scraping",
         "GUI's",
         "Excel/VBA",
@@ -52,6 +53,8 @@ function TechnoCards() {
       "section2": [
         "Arduino",
         "Raspberry Pi",
+        "RTOS",
+        "I2C"
       ]
     };
     
@@ -76,8 +79,13 @@ function TechnoCards() {
             </Col>
           </Row>
           <h1 style={titleText}>
-          Work Experience
+          Internships
         </h1>
+          <Row>
+            <Col style={{display:'flex', alignItems: 'center', justifyContent: 'center'}}>
+              <WorkCard title="Lockheed Martin" subTitle="Software Engineering Intern" mainText="Implemented a system to gather and web scrape data to auto-generate daily reports. Made use of Python Requests, BeautifulSoul4, Selenium, Microsoft SQL Server, and Excel/VBA."/>
+            </Col>
+          </Row>
           <Row>
             <Col style={{display:'flex', alignItems: 'center', justifyContent: 'center'}}>
               <WorkCard title="E3 Entegral Solutions" subTitle="Software Development Intern" mainText="Implemented a system to gather and web scrape data to auto-generate daily reports. Made use of Python Requests, BeautifulSoul4, Selenium, Microsoft SQL Server, and Excel/VBA."/>
@@ -87,7 +95,10 @@ function TechnoCards() {
               <FontAwesomeIcon icon={faCodeFork} class="fa-2xs fa-rotate-270" style={{fontSize: '20px', zIndex: '-1'}}/>
             </Col>
           :
-            null
+          // <Row xs={1} style={{ display: 'flex' }}>
+          //   <FontAwesomeIcon icon={faCodeFork} style={{ fontSize: '75px', zIndex: -1 }} />
+          // </Row>
+          ''
           }
             
             <Col style={{display:'flex', alignItems: 'center', justifyContent: 'center'}}>

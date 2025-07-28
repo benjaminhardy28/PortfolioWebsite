@@ -5,63 +5,62 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 function ProjectCard({ title, techUsed, description, data, largeHeight, smallHeight }) {
+  const cardStyle = {
+    border: '0px solid #000',
+    borderRadius: '0', // no rounded corners
+    padding: '1.5rem',
+    margin: '1rem 0',
+    backgroundColor: '#fff',
+    boxShadow: 'rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px', // subtle outline
+  };
 
-    const cardTest = {
-      borderRadius: '1em',
-      maxWidth: '80em',
-      boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px',
-      border: 'none',
-      zIndex: '-1',
-      padding: 'em',
-      display: 'flex', 
-    }
+  const titleStyle = {
+    fontSize: '1.8rem',
+    fontWeight: '600',
+    marginBottom: '1rem',
+  };
+
+  const subtitleStyle = {
+    marginBottom: '1.5rem',
+    display: 'flex',
+    flexWrap: 'wrap',
+    gap: '0.5rem',
+  };
+
+  const techBadge = {
+    backgroundColor: '#c7ceff',
+    padding: '0.4rem 0.7rem',
+    fontSize: '0.8rem',
+    borderRadius: '8px'
+  };
+
+  const textStyle = {
+    lineHeight: '1.5',
+    fontSize: '1rem',
+    marginBottom: '1.5rem',
+  };
 
   return (
-        <>
-      <Card style={cardTest}>
-        <Card.Body
-        //  style={{
-        //   minHeight : window.innerWidth > 1100 ?  largeHeight : smallHeight
-        //   }}
-        >
-          <Container >
-            <Row>
-              <Col>
-                <Card.Title style={{fontSize:'150%', fontWeight: 'bold', }}>{title}</Card.Title>
-                <Card.Subtitle  className="mb-2 text-muted" style={{lineHeight: '1.3rem', fontSize:'.85rem', marginTop: '.9rem'}}>
-                  {techUsed.map( (skill) => (
-                    <>          
-                    <span style={{ display: 'inline-block', marginBottom: '1.2rem', marginRight: '.3rem' }}>
-                      <span style={{ backgroundColor: '#c7ceff', padding: '.4rem', borderRadius: '.7rem' }}>{skill}</span>
-                      <span> </span>
-                    </span>   
-                  </>
+    <Card style={cardStyle}>
+      <Card.Body>
+        <Container>
+          <Row className="align-items-center">
+            <Col lg={6}>
+              <Card.Title style={titleStyle}>{title}</Card.Title>
+              <Card.Subtitle style={subtitleStyle}>
+                {techUsed.map((skill, idx) => (
+                  <span key={idx} style={techBadge}>{skill}</span>
                 ))}
-                </Card.Subtitle>
-                <Card.Text >
-                  <p>{description}</p>
-                </Card.Text>
-              </Col>
-            {window.innerWidth > 1000 ? 
-              <Col >
-                <CustomCarousel picures_data={data}/>
-              </Col>
-            :
-              null
-            }
-            </Row>
-            {window.innerWidth > 1000 ?
-          
-          null
-          :
-          <Row style={{display:'flex', alignItems: 'center', justifyContent: 'center'}}>
-            <CustomCarousel picures_data={data}/>
-           </Row>
-          }
-          </Container>
-        </Card.Body>
-      </Card>
-    </>
+              </Card.Subtitle>
+              <Card.Text style={textStyle}>{description}</Card.Text>
+            </Col>
+            <Col lg={6}>
+              <CustomCarousel picures_data={data} />
+            </Col>
+          </Row>
+        </Container>
+      </Card.Body>
+    </Card>
   );
 }
 
