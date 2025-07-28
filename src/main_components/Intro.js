@@ -12,9 +12,10 @@ import { Link } from 'react-scroll';
 function Intro() {
     const intro = {
         fontFamily: "monospace",
-        minHeight: window.innerHeight,
+        minHeight: window.innerHeight-30,
         padding: '8vw',
         boxShadow: 'rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px',
+        maxHeight:'4vw'
       };
 
 
@@ -23,20 +24,19 @@ function Intro() {
             <Container>
                 <Row>
                     <Col style={{ boxShadow: '',}}>
-                        <span style={{fontSize: window.innerWidth > 1100 ? '2.3rem' : '3.5vh'}} className="titleH1">
+                        <span style={{fontSize: window.innerWidth > 1100 ? '2rem' : '3.2vh'}} className="titleH1">
                             <FontAwesomeIcon icon={faTerminal} style={{color: '3B71CA', fontFamily: '"Roboto", sans-serif',}}/>
                             Hi I'm Ben! A CS student at Texas A&M.
                         </span>
-                        <span style={{ fontWeight: 'bold', fontSize: window.innerWidth > 1100 ? '1.8rem' : '3vh'}}>
+                        <span style={{ fontWeight: 'bold', fontSize: window.innerWidth > 1100 ? '1.5rem' : '2.7vh'}}>
                                 <pre></pre>
                                 {' To put it simply, I love building and innovating things.'} 
                         </span>  
                         <pre></pre>
-                        <span style={{fontSize: window.innerWidth > 1100 ? '1.5rem' : '2.9vh'}}>
+                        <span style={{fontSize: window.innerWidth > 1100 ? '1.3rem' : '2.4vh'}}>
                          {"I'm motivated by the potential to use tech to improve people's quality of life."}
                         </span> <pre></pre>
-                        {/* <span style={{fontSize: window.innerWidth > 1100 ? '1.7rem' : '2.5vh'}}>{'I love building with both hardware and software!\n'}</span> */}
-                        <span style={{ fontSize: window.innerWidth > 1100 ? '1.7rem' : '2.5vh' }}>
+                        <span style={{ fontSize: window.innerWidth > 1100 ? '1.4rem' : '2.4vh' }}>
                             I have diverse {' '}
                             <Link
                                 to="Skills"
@@ -47,10 +47,8 @@ function Intro() {
                                 style={{ textDecoration: 'underline', color: '#007bff', cursor: 'pointer' }}
                             >
                                 experience
-                            </Link>{', and '}
-                            </span>
-                        <span style={{ fontSize: window.innerWidth > 1100 ? '1.7rem' : '2.5vh' }}>
-                            I love building projects in both {' '}
+                            </Link>
+                            , and I love building projects in both{' '}
                             <Link
                                 to="Software_Projects"
                                 spy={true}
@@ -60,7 +58,8 @@ function Intro() {
                                 style={{ textDecoration: 'underline', color: '#007bff', cursor: 'pointer' }}
                             >
                                 Software
-                            </Link>{' and '}
+                            </Link>
+                            {' and '}
                             <Link
                                 to="Embedded_Projects"
                                 spy={true}
@@ -70,7 +69,8 @@ function Intro() {
                                 style={{ textDecoration: 'underline', color: '#007bff', cursor: 'pointer' }}
                             >
                                 Embedded Systems
-                            </Link>{'!'}
+                            </Link>
+                            !
                             </span>
                         <div style={{marginTop: '2em'}}>
                             {/* <InfoButtons/> */}
