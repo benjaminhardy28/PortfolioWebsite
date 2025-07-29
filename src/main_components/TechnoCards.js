@@ -83,7 +83,7 @@ function TechnoCards() {
         </h1>
           <Row>
             <Col style={{display:'flex', alignItems: 'center', justifyContent: 'center'}}>
-              <WorkCard title="Lockheed Martin" subTitle="Software Engineering Intern" mainText="Developed flight software for NASA/NOAA's GeoXO satellite program using a multithreaded environment with RTOS, C++, and I2C. Automated the generation of documentation using Doxygen and Python through Gitlab CI."/>
+              <WorkCard title="Lockheed Martin" subTitle="Software Engineering Intern" mainText="Developed flight software for NASA/NOAA's GeoXO satellite program with RTOS, C++, and I2C. Automated the generation of documentation using Doxygen and Python through Gitlab CI."/>
             </Col>
           </Row>
           <Row>
